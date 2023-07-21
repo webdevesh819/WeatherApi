@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="icon" href="/img/weather.png">
+    <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
+    <title>Weather</title>
+</head>
+
+
+<body>
+
+
+    <div class='main-content'>
+        {{>header}}
+        <form action="submit">
+            <p for="location">Enter Location to get Weather</p>
+            <br>
+            <input type="text">
+            <button>Submit</button>
+        </form>
+        <img id="icon" src="" alt="">
+        <p id="message_1"></p>
+        <p id="message_2"></p>
+        <div id="airq"></div>
+    </div>
+
+    {{!-- // it is derefrencing the object paseed in render --}}
+    {{>footer}}
+    <script src="/JS/app.js"></script>
+</body>
+
+</html>
